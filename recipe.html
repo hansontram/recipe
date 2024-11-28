@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Good Eats - Street Tacos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
@@ -13,103 +15,126 @@
   <body>
     <header>
       <nav class="top-nav" aria-label="Main Navigation">
-        <button aria-label="Toggle Menu">
-          <img src="./images/hamburger.svg" alt="Menu Icon" />
-          <text>Menu</text>
-        </button>
-        <ul id="main-nav" hidden>
-          <li>
-            <a href="#"><img src="logo.svg" alt="Home" /></a>
+        <a href="#" class="top-nav-link hamburger-icon">
+          <img src="./images/hamburger.svg" alt="Menu Icon" />Menu</a
+        >
+        <ul id="main-nav" class="hidden">
+          <!-- <li>
+            <a href="#"><img src="./images/logo.svg" alt="Home" /></a>
+          </li> -->
+          <li class="flex-col-svg">
+            <a href="#"><img src="./images/breakfast.png" alt="Breakfast" /></a>
+            <text>Breakfast</text>
           </li>
-          <li>
-            <a href="#"><img src="breakfast.png" alt="Breakfast" /></a>
+          <li class="flex-col-svg">
+            <a href="#"><img src="./images/brunch.png" alt="Brunch" /></a>
+            <text>Brunch</text>
           </li>
-          <li>
-            <a href="#"><img src="brunch.png" alt="Brunch" /></a>
+          <li class="flex-col-svg">
+            <a href="#"><img src="./images/lunch.png" alt="Lunch" /></a>
+            <text>Lunch</text>
           </li>
-          <li>
-            <a href="#"><img src="lunch.png" alt="Lunch" /></a>
+          <li class="flex-col-svg">
+            <a href="#"><img src="./images/dinner.png" alt="Dinner" /></a>
+            <text>Dinner</text>
           </li>
-          <li>
-            <a href="#"><img src="dinner.png" alt="Dinner" /></a>
+          <li class="flex-col-svg">
+            <a href="#"
+              ><img src="./images/appetizers.png" alt="Appetizers"
+            /></a>
+            <text>Appetizers</text>
           </li>
-          <li>
-            <a href="#"><img src="appetizers.png" alt="Appetizers" /></a>
+          <li class="flex-col-svg">
+            <a href="#"><img src="./images/desserts.png" alt="Desserts" /></a>
+            <text>Desserts</text>
           </li>
-          <li>
-            <a href="#"><img src="desserts.png" alt="Desserts" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="beverages.png" alt="Beverages" /></a>
+          <li class="flex-col-svg">
+            <a href="#"><img src="./images/beverages.png" alt="Beverages" /></a>
+            <text>Beverages</text>
           </li>
         </ul>
 
-        <img src="./images/icon.svg" alt="Icon" />
-        <form role="search" aria-label="Site Search">
-          <input type="text" placeholder="Search..." aria-label="Search" />
-          <button type="submit">
-            <img src="./images/search.svg" alt="Search" />
-          </button>
-        </form>
-
-        <button aria-label="Toggle Menu">
-          <img src="./images/avatar.svg" alt="Avatar Icon" />
-          <text>Sign In/Up</text>
-        </button>
+        <img src="./images/icon.svg" alt="Icon" class="iconImg" />
+        <a href="#" class="top-nav-link avatarIcon"
+          ><img src="./images/avatar.svg" alt="Avatar Icon" />Sign In/Up</a
+        >
       </nav>
+      <form role="search" aria-label="Site Search" class="search-container">
+        <input
+          type="text"
+          placeholder="Find a recipe"
+          aria-label="Search"
+          class="searchbar"
+        />
+        <button type="submit">
+          <img src="./images/search.svg" alt="Search" />
+        </button>
+      </form>
     </header>
     <main>
-      <section>
-        <h1>Good Eats - Street Tacos</h1>
-        <h2>Street Tacos</h2>
-        <ul aria-label="Post Actions">
+      <section id="recipe">
+        <h1>Street Tacos</h1>
+        <ul aria-label="Post Actions" class="nav-links-ul">
           <li>
-            <button aria-label="Save">
-              <img src="./images/save.svg" alt="Save" />
-            </button>
-            <text>Save</text>
+            <a href="#save" class="nav-links save-link">
+              <img src="./images/save.svg" alt="Save" /> Save
+            </a>
           </li>
           <li>
-            <button aria-label="Share">
-              <img src="./images/share.svg" alt="Share" />
-            </button>
+            <a href="#share" class="nav-links share-link">
+              <img src="./images/share.svg" alt="Share" /> Share
+            </a>
           </li>
           <li>
-            <button aria-label="Print">
-              <img src="./images/print.svg" alt="print" />
-            </button>
+            <a href="#print" class="nav-links print-link">
+              <img src="./images/print.svg" alt="Print" /> Print
+            </a>
           </li>
           <li>
-            <a href="#recipe"
-              ><img src="./images/jump.svg" alt="Jump to Recipe" /> Jump to
-              Recipe</a
-            >
+            <a href="#recipe" class="nav-links recipe-link">
+              <img src="./images/jump.svg" alt="Jump to Recipe" /> Jump to
+              Recipe
+            </a>
           </li>
         </ul>
-        <img src="./images/street-tacos.png" alt="Street Tacos" />
-        <p>
-          Street tacos are delicious, amazing, and oh so mouthwatering! Bite
-          into tender steak, zesty lime flavor with a hint of spice and add on
-          tomatoes, avocado, and onions for a savory bite you are going to love!
-        </p>
-        <p>
-          These street tacos are completely jam-packed with flavor and they are
-          so easy to make. I love how the meat is so tender and juicy and only
-          takes an hour to marinate! If you absolutely love tacos like me, try
-          out these other amazing taco recipes! These taco-stuffed avocados,
-          Baja fish tacos, and ground beef tacos will not disappoint!!
-        </p>
+        <aside class="taco-description">
+          <img
+            src="./images/street-tacos.png"
+            alt="Street Tacos"
+            class="tacos-img"
+          />
+
+          <p>
+            Street tacos are delicious, amazing, and oh so mouthwatering! Bite
+            into tender steak, zesty lime flavor with a hint of spice and add on
+            tomatoes, avocado, and onions for a savory bite you are going to
+            love!
+          </p>
+          <p>
+            These street tacos are completely jam-packed with flavor and they
+            are so easy to make. I love how the meat is so tender and juicy and
+            only takes an hour to marinate! If you absolutely love tacos like
+            me, try out these other amazing taco recipes! These taco-stuffed
+            avocados, Baja fish tacos, and ground beef tacos will not
+            disappoint!!
+          </p>
+        </aside>
       </section>
       <section id="details">
         <h3>Details</h3>
         <ul>
-          <li>Prep Time: 10 minutes</li>
-          <li>Cook Time: 10 minutes</li>
-          <li>Total Time: 20 minutes</li>
-          <li>Author: Taco Cheesington</li>
-          <li>Servings: 6 Tacos</li>
+          <li><span class="label">Prep Time:</span> <span>10 minutes</span></li>
+          <li><span class="label">Cook Time:</span> <span>10 minutes</span></li>
+          <li>
+            <span class="label">Total Time:</span> <span>20 minutes</span>
+          </li>
+          <li>
+            <span class="label">Author:</span> <span>Taco Cheesington</span>
+          </li>
+          <li><span class="label">Servings:</span> <span>6 Tacos</span></li>
         </ul>
       </section>
+
       <section id="ingredients">
         <h3>Ingredients</h3>
         <ul>
@@ -151,29 +176,73 @@
       </section>
       <section id="side-dishes">
         <h3>Need some side dishes?</h3>
-        <article>
+        <article class="side-container">
           <img src="./images/mexican-rice.png" alt="Mexican Rice" />
-          <h4>Mexican Rice</h4>
-          <p>Traditional recipe with a twist.</p>
-          <p>Rating: 4 of 5 Stars</p>
+          <div>
+            <h4>Mexican Rice</h4>
+            <p>Traditional recipe with a twist.</p>
+            <div class="ratings-container">
+              <h5>Rating</h5>
+              <div class="star-container">
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+              </div>
+            </div>
+          </div>
         </article>
-        <article>
+        <article class="side-container">
           <img src="./images/salsa.png" alt="Salsa" />
-          <h4>Salsa</h4>
-          <p>Just the right amount of spice.</p>
-          <p>Rating: 5 of 5 Stars</p>
+          <div>
+            <h4>Salsa</h4>
+            <p>Just the right amount of spice.</p>
+            <div class="ratings-container">
+              <h5>Rating</h5>
+              <div class="star-container">
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+              </div>
+            </div>
+          </div>
         </article>
-        <article>
+        <article class="side-container">
           <img src="./images/guacamole.png" alt="Guacamole" />
-          <h4>Guacamole</h4>
-          <p>Fresh and healthy.</p>
-          <p>Rating: 4 of 5 Stars</p>
+          <div>
+            <h4>Guacamole</h4>
+            <p>Fresh and healthy.</p>
+            <div class="ratings-container">
+              <h5>Rating</h5>
+              <div class="star-container">
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+              </div>
+            </div>
+          </div>
         </article>
-        <article>
+        <article class="side-container">
           <img src="./images/tortillas.png" alt="Tortillas" />
-          <h4>Tortillas</h4>
-          <p>Easy to make and so good.</p>
-          <p>Rating: 4 of 5 Stars</p>
+          <div>
+            <h4>Tortillas</h4>
+            <p>Easy to make and so good.</p>
+            <div class="ratings-container">
+              <h5>Rating</h5>
+              <div class="star-container">
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+              </div>
+            </div>
+          </div>
         </article>
       </section>
     </main>
