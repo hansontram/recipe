@@ -256,25 +256,25 @@ body{
   
 
 #directions li {
-  margin-bottom: 8px; /* Adds spacing between list items */
+  margin-bottom: 15px; /* Adds spacing between list items */
   line-height: 1.5; /* Improves readability */
 
 }
 
 /* Side-dishes */
 #side-dishes{
-    padding: .5rem .5rem;
+    padding: .5rem .8rem;
     background-color: var(--color-teal);
     display: flex;
     flex-direction: column;
   }
-
   #side-dishes h3{
     text-align: center;
     font-family: var(--font-heading);
     font-size: var(--h3-text-size);
     margin: .5rem 0 .8rem 0;
   }
+
   #side-dishes h4{
     font-family: var(--font-heading);
     font-size: 25px;
@@ -282,12 +282,61 @@ body{
   }
   .side-container{
     display: flex;
-    
+    gap: 1.3rem;
+    margin-top: 2rem;
   }
   .side-container img{
-    width: 15%;
+    min-width: 10px;
+    max-width: 110px;
     
   }
+
+  .ratings-container{
+    margin: 7px 0 0 0;
+      }
+
+ .ratings-container h5{
+    font-weight: 600; 
+    margin-bottom: 5px;
+      }
+
+      /* Footer */
+
+    footer{
+        background-color: #ffffff;
+        margin-top: 1rem;
+        padding: 2rem 1rem 0.5rem 1rem;
+    }
+    .footer-link-container ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer-link-container ul li a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #EB5428;
+        font-size: 20px;
+        font-family: var(--font-heading);
+    }
+    .footer-bottom-container{
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.2rem;
+    }
+    .footer-bottom-container img{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 1.4rem;
+    }
+    .footer-bottom-container p{
+        font-weight: bold;
+        font-family: var(--font-heading);
+    }
 /* -------------------- MEDIA QUERY (medium) -------------------------------- */
 @media (min-width: 768px) {
     #main-nav {
