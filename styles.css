@@ -70,6 +70,7 @@ table {
 body{
     background-color: var(--color-white);
     font-family: var(--font-text);
+    
 }
 /* Toggle Menu */
 .hidden {
@@ -339,8 +340,28 @@ body{
     }
 /* -------------------- MEDIA QUERY (medium) -------------------------------- */
 @media (min-width: 768px) {
+    .hidden {
+        display: none;
+      }
     #main-nav {
+        width: 100%;
         display: flex; /* Or block, depending on your layout */
+        justify-content: space-between;
+        border: 1px solid red;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+        padding: .8=5rem .3rem;
+      }
+      #main-nav li{
+        width: 10%;
+        border: 1px solid red;
+        text-align: center;
+        color: var(--color-orange);
+        font-family: var(--font-heading);
+      }
+      #main-nav li a img{
+        width: 80%;
+       
       }
 
 
@@ -348,8 +369,8 @@ body{
 
 /* -------------------- MEDIA QUERY (large) --------------------------------- */
 @media (min-width: 1280px) {
-    #main-nav {
+    /* #main-nav {
         display: flex; /* Or block, depending on your layout */
-      }
+      } */
 }
 
